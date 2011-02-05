@@ -1,0 +1,45 @@
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<parent>
+		<artifactId>parent-central</artifactId>
+		<groupId>org.neo4j</groupId>
+		<version>8</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.neo4j.jta</groupId>
+	<artifactId>jotm-service-provider</artifactId>
+	<version>0.0.1</version>
+	<description>
+	A sample implementation of a transaction manager
+	provider service for JOTM
+	</description>
+	<developers>
+		<developer>
+			<id>chrisgioran</id>
+			<name>Christos Gioran</name>
+			<email>chris dot gioran [at] gmail dot com</email>
+			<timezone>+2</timezone>
+		</developer>
+	</developers>
+
+	<licenses>
+		<license>
+			<name>GNU Affero General Public License, Version 3</name>
+			<url>http://www.gnu.org/licenses/agpl-3.0-standalone.html</url>
+		</license>
+	</licenses>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.ow2.jotm</groupId>
+			<artifactId>jotm-core</artifactId>
+			<version>2.1.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j-kernel</artifactId>
+			<version>1.2-jta-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+</project>
